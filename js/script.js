@@ -110,7 +110,7 @@ function displayFoot()
     let foot = `<tfoot>
             <tr>
                 <td colspan="4" >
-                    <button class="btn btn-danger btn-block clear-all">Clear All </button>
+                    <button class="btn btn-danger btn-block" onClick="clearAll()">Clear All </button>
                 </td>
             </tr>
         </tfoot>`;
@@ -136,6 +136,12 @@ deleteItem = (id)=>{
     }
 }
 
-// deleteItem = (id)=>{
-//     console.log(id);
-// }
+// clear all items 
+
+clearAll = ()=>
+{
+    localStorage.setItem("students","[]");
+    document.querySelector("#students tbody").innerHTML ='';
+    document.querySelector(".error").innerHTML = `<h3 class="alert alert-danger text-center display-4">  Items Deleted </h3>`;
+    document.querySelector("#students tfoot").remove();
+}
