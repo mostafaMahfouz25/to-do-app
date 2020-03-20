@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>To Do App</title>
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2 ">
+                    <h1 class="display-4 text-center text-white  p-3"> To Do App </h1>
+                    <form class="row " id="student-data">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="first-name" class="text-white " >First Name</label>
+                                <input type="text" class="form-control" id="first-name">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="first-name" class="text-white ">Last Name</label>
+                                <input type="text" class="form-control" id="last-name">
+                            </div>
+                        </div>
+    
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="age"  class="text-white ">Age</label>
+                                <input type="number" class="form-control" id="age">
+                            </div>
+                        </div>
+    
+                        <div class="col-sm-12">
+                            <div class="form-group" >
+                                <input type="submit" class="btn btn-block btn-success" id="submit" value="Add New">
+                            </div>
+                        </div>
+                        
+                        
+                    </form> 
+                    <div class="error"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <h1 class="text-center display-4 my-3 sec-color">All Students</h1>
+                    <table class="table table-bordered " id="students">
+                        <thead>
+                            <tr class="text-center thir-color">
+                                <td>First Name</td>
+                                <td>Last Name</td>
+                                <td>Age</td>
+                                <td>Delete</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr class="text-center text-white">
+                                <td>Mostafa</td>
+                                <td>Mahfouz</td>
+                                <td>30</td>
+                                <td> <i class="fa fa-trash btn btn-danger delete-item" data-id="50"></i> </td>
+                            </tr> -->
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <!-- https://www.exchangerate-api.com/ -->
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
