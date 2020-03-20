@@ -36,7 +36,7 @@ studentData.onsubmit = (e)=>
     
     if(firstName.value == '' || lastName.value == '' ||  age.value == '' )
     {
-        document.querySelector(".error").innerHTML = `<h3 class="alert alert-danger text-center display-4">  Please Fill All Filds </h3>`;
+        document.querySelector(".error").innerHTML = `<h3 class="alert alert-danger text-center display-4">  Please Fill All Fields </h3>`;
         return false;
     }
 
@@ -145,3 +145,6 @@ clearAll = ()=>
     document.querySelector(".error").innerHTML = `<h3 class="alert alert-danger text-center display-4">  Items Deleted </h3>`;
     document.querySelector("#students tfoot").remove();
 }
+
+// netlify
+// https://eraasoft-to-do-app.netlify.com/
