@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>To Do App</title>
+    <title>Quiz App</title>
 </head>
 <body>
 
@@ -14,65 +14,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 offset-sm-2 ">
-                    <h1 class="display-4 text-center text-white  p-3"> To Do App </h1>
-                    <form class="row " id="student-data">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="first-name" class="text-white " >First Name</label>
-                                <input type="text" class="form-control" id="first-name">
+                    <h1 class="display-4 text-center text-white  p-3"> Quiz App </h1>
+                    <div id="quiz">
+                        <h3 id="question" class="text-white text-center"></h3>
+                        <div class="buttons mt-5">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <button class="btn btn-info btn-block mb-3" id="btn0"> <span id="choice0"></span> </button>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <button class="btn btn-info btn-block mb-3" id="btn1"> <span id="choice1"></span> </button>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <button class="btn btn-info btn-block mb-3" id="btn2"> <span id="choice2"></span> </button>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <button class="btn btn-info btn-block mb-3" id="btn3"> <span id="choice3"></span> </button>
+                                </div>
                             </div>
+                           
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="first-name" class="text-white ">Last Name</label>
-                                <input type="text" class="form-control" id="last-name">
-                            </div>
+                        <div id="progress" class="text-center bg-primary mt-5 text-white py-3">
+                            Question  <span class="badge badge-danger p-2" id="from"> 1 </span>  Of <span class="badge badge-info p-2" id="to"> 5 </span>
                         </div>
-    
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="age"  class="text-white ">Age</label>
-                                <input type="number" class="form-control" id="age">
-                            </div>
-                        </div>
-    
-                        <div class="col-sm-12">
-                            <div class="form-group" >
-                                <input type="submit" class="btn btn-block btn-success" id="submit" value="Add New">
-                            </div>
-                        </div>
-                        
-                        
-                    </form> 
+                    </div>
                     <div class="error"></div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-10 mx-auto">
-                    <h1 class="text-center display-4 my-3 sec-color">All Students</h1>
-                    <table class="table table-bordered " id="students">
-                        <thead>
-                            <tr class="text-center thir-color">
-                                <td>First Name</td>
-                                <td>Last Name</td>
-                                <td>Age</td>
-                                <td>Delete</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- <tr class="text-center text-white">
-                                <td>Mostafa</td>
-                                <td>Mahfouz</td>
-                                <td>30</td>
-                                <td> <i class="fa fa-trash btn btn-danger delete-item" data-id="50"></i> </td>
-                            </tr> -->
-                        </tbody>
-                        
-                    </table>
-                </div>
-            </div>
-            
         </div>
     </section>
     
@@ -83,7 +54,9 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/quiz_controller.js"></script>
+    <script src="js/question.js"></script>
+    <script src="js/app.js"></script>
     
 </body>
 </html>
